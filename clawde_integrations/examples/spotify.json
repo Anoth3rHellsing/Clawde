@@ -1,0 +1,26 @@
+{
+  "name": "Spotify",
+  "process_match": ["spotify.exe"],
+  "title_keywords": ["spotify"],
+  "states": {
+    "on_activate": {
+      "state": "MUSIC",
+      "priority": 48,
+      "hat": "PARTY_HAT",
+      "bubble_text": "🎵 Escuchando música"
+    },
+    "on_idle_after": {
+      "seconds": 300,
+      "state": "IDLE",
+      "bubble_text": null
+    }
+  },
+  "interactions": {
+    "on_pet": {"bubble_text": "🎶 ¡Buena canción!"},
+    "on_drag": {"bubble_text": "¡Hey, me estás moviendo!"}
+  },
+  "movement": {
+    "preferred_zone": "taskbar",
+    "hide_probability": 0.2
+  }
+}

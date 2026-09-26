@@ -1,0 +1,26 @@
+{
+  "name": "Slack",
+  "process_match": ["slack.exe"],
+  "title_keywords": ["slack"],
+  "states": {
+    "on_activate": {
+      "state": "CHAT",
+      "priority": 45,
+      "hat": "NONE",
+      "bubble_text": "💬 Chateando en Slack"
+    },
+    "on_idle_after": {
+      "seconds": 180,
+      "state": "WATCHTOWER",
+      "bubble_text": null
+    }
+  },
+  "interactions": {
+    "on_pet": {"bubble_text": "📨 ¡Nuevo mensaje!"},
+    "on_drag": {"bubble_text": "¡Espera, estoy leyendo!"}
+  },
+  "movement": {
+    "preferred_zone": "safehouse",
+    "hide_probability": 0.1
+  }
+}

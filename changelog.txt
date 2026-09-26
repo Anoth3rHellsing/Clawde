@@ -1,0 +1,35 @@
+CLAWDE - CHANGELOG
+==================
+
+[0.1.0] — 2026-09-09
+
+Primera versión pública de Clawde, la mascota de escritorio que reacciona a lo que estás haciendo.
+
+AÑADIDO:
+- Mascota overlay siempre visible (robot voxel naranja) sobre todas las ventanas sin aparecer en barra de tareas.
+- Detección de contexto en tiempo real: aplicación en primer plano, título de ventana, pantalla completa y actividad de teclado/ratón mediante hooks de bajo nivel en Windows.
+- Animaciones contextuales por aplicación:
+  * VS Code, PyCharm, IntelliJ, Sublime Text → gafas, taburete, tablero holográfico con código; aplaude al escribir rápido.
+  * Discord, Slack, Teams → mini-sofá con auriculares, micrófono y burbuja de chat.
+  * Explorador de archivos / Finder → asomado a archivero miniatura con cajones abiertos.
+  * Chrome, Edge, Firefox, Brave, Opera → lupa gigante sobre cinta transportadora.
+  * Redes sociales (Twitter/X, Instagram, Facebook, TikTok, Reddit) → mira mini-teléfono alternando caras de shock y risa.
+  * Photoshop, Blender, GIMP → cuerpo cambia de color continuamente con paleta y pincel.
+  * Notepad, Word, WordPad → pluma estilográfica gigante con gota de tinta.
+  * Hitman 3 → modo sigilo con chaleco táctico, gafas de sol y binoculares.
+  * Cyberpunk 2077 → paneles verdes flotantes estilo Matrix con cables conectados.
+  * Cualquier app en pantalla completa → sentado atento mirando hacia arriba, asintiendo.
+- Comportamientos aleatorios autónomos cada 12–30 segundos cuando estás inactivo: estornudar, saludar, estirarse, perseguir bicho imaginario, hacer ejercicio, bostezar, dar vuelta o pensar con "?" flotante.
+- Sistema de estado con prioridades: estados forzados (acariciar, arrastrar) > aplicación > idle.
+- Barra de ánimo (Mood): sube al acariciar, vuelve sola a neutro; ánimo alto puede provocar baile feliz espontáneo.
+- Panel de estado flotante colapsable con un clic.
+- Interacción con ratón: clic y mantener = acariciar (ronronea con corazones); clic y arrastrar = reposicionar (se agita con líneas de velocidad).
+- Renderizado voxel 2D pixel-art sin antialiasing con brillo y sombra para imitar figura impresa en 3D.
+- Partículas animadas: corazones al acariciar, "Zzz" al bostezar, chispas al bailar y escribir rápido.
+- Ejecutable autocontenido Clawde.exe compilado con PyInstaller, sin dependencias externas.
+- Soporte multiplataforma en código: detección preparada para Windows (win32) y macOS (Cocoa/Quartz), con polling de respaldo.
+
+NOTAS TÉCNICAS:
+- Construido con Python 3.14 y PySide6 (Qt 6).
+- Hooks de teclado/ratón tipados correctamente para Python 64 bits.
+- Máquina de estados desacoplada del renderizado para facilitar nuevos comportamientos.

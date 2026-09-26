@@ -1,0 +1,12 @@
+node_modules/
+Executables/
+build/
+dist/
+*.exe
+*.spec
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
